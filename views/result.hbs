@@ -1,0 +1,15 @@
+<h1>Body Mass Index Calculator</h1>
+
+<h2>Results</h2>
+<!-- Check if a BMI value is present (if the calculation was successful) -->
+{{#if bmi}}
+    <p>Your body mass index is: <strong>{{bmi}}</strong> </p>
+{{/if}}
+<!-- Check if an error message is present (e.g., invalid input)-->
+{{#if message}}
+    <div class="alert alert-danger" role="alert">
+        <strong>Error:</strong> {{message}}
+    </div>
+{{/if}}
+<!-- Link to navigate back to the BMI form page for the user to try again -->
+<a href="/BMIForm">Back to Home Page</a>
